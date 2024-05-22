@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Power BI</title>
+    <style>
+        body {
+            background-color: black; /* Fond noir */
+            color: white; /* Texte blanc */
+            text-align: center; /* Centrer le contenu */
+            padding-top: 50px; /* Espacement depuis le haut */
+        }
+        h1 {
+            font-size: 40px; /* Taille de police */
+        }
+    </style>
+    <style>
+        body {
+            background-image: url('https://cdn2.webmanagercenter.com/wmc/wp-content/uploads/2023/04/tunisie-wmc-bourse-BTE.jpg'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin de votre image */
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .content-loaded {
+            opacity: 1;
+        }
+        iframe {
+            transition: transform 0.5s ease-in-out;
+        }
+        iframe:hover {
+            transform: scale(1.1);
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 120px; 
+            height: auto;
+        }
+    </style>
+</head>
+<body onload="document.body.classList.add('content-loaded')">
+    <img src="C:\Users\AHMED\Pictures\bte_logo.jpg" alt="Logo" class="logo"> 
+    <h1>Dashboard BTE</h1>
+    <iframe width="800" height="600" src="https://app.powerbi.com/reportEmbed?reportId=f24c7eef-a057-4c49-9b3f-23b93dc25fae&autoAuth=true&ctid=604f1a96-cbe8-43f8-abbf-f8eaf5d85730" frameborder="0" allowFullScreen="true"></iframe>
+    <script>
+        window.onload = function() {
+            document.body.classList.add('content-loaded');
+        }
+    </script>
+</body>
+</html>
